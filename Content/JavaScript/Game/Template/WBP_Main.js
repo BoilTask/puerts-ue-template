@@ -5,6 +5,13 @@ Object.defineProperties(exports, { __esModule: { value: true }, [Symbol.toString
 const _WBP_Main_C = class _WBP_Main_C {
   Construct() {
     console.log("WBP_Main_C Construct");
+    this.NumTextBlock.SetText("0");
+    this.NumButton.OnClicked.Add(() => this.OnNumButtonClicked());
+  }
+  OnNumButtonClicked() {
+    console.log("OnNumButtonClicked");
+    const currNum = parseInt(this.NumTextBlock.GetText());
+    this.NumTextBlock.SetText((currNum + 1).toString());
   }
 };
 __name(_WBP_Main_C, "WBP_Main_C");

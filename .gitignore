@@ -1,5 +1,6 @@
 .idea
 .vsconfig
+.suo
 Binaries
 Intermediate
 DerivedDataCache

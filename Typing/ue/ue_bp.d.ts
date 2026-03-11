@@ -1328,10 +1328,12 @@ declare module "ue" {
     }
 
 // __TYPE_DECL_END
-// __TYPE_DECL_START: 1e4260c69bfdb82b124a7d9defb677c6817f3456
+// __TYPE_DECL_START: dec831c876397c4f26a506c58800cf2af5c39926
     namespace Game.Template.WBP_Main {
         class WBP_Main_C extends UE.UserWidget {
             constructor(Outer?: Object, Name?: string, ObjectFlags?: number);
+            NumTextBlock: UE.TextBlock;
+            NumButton: UE.Button;
             /*
              *返回模块路径，如果没有export default，那么需要指定类名，比如 "._GameModule:MyClass"
              */
