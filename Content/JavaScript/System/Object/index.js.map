@@ -1,0 +1,1 @@
+{"version":3,"file":"index.js","sources":["../../../../TypeScript/System/Object/index.ts"],"sourcesContent":["import * as UE from \"ue\";\nexport function ObjectValid(obj: UE.Object): boolean {\n    return obj && UE.KismetSystemLibrary.IsValid(obj);\n}\n"],"names":["UE"],"mappings":";;;;;AACO,SAAS,YAAY,KAAyB;AACjD,SAAO,OAAOA,GAAG,oBAAoB,QAAQ,GAAG;AACpD;AAFgB;;"}

@@ -1,0 +1,3 @@
+[submodule "Plugins/PuertsAutoMixin"]
+	path = Plugins/PuertsAutoMixin
+	url = https://github.com/BoilTask/PuertsAutoMixin
