@@ -1,10 +1,11 @@
 ﻿#pragma once
 
 #include "CoreMinimal.h"
-#include "SourceFileWatcher.h"
 
 #include "JsEnv.h"
-#include "PuertsAutoMixinSubsystem.h"
+
+#include "PuertsAutoMixinLibrary.h"
+#include "SourceFileWatcher.h"
 
 #include "TemplateGameInstance.generated.h"
 

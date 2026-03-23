@@ -2,6 +2,7 @@
 
 #include <functional>
 
+#include "PuertsAutoMixinModule.h"
 #include "SourceFileWatcher.h"
 
 void UTemplateGameInstance::OnStart()
@@ -27,7 +28,8 @@ void UTemplateGameInstance::Shutdown()
 
 void UTemplateGameInstance::BindMixin(const FPuertsAutoMixinDelegate& BindCallback)
 {
-	UPuertsAutoMixinSubsystem::GetInstance().RegisterBindDelegate(JsEnv, BindCallback);
+	IPuertsAutoMixinModule& Module = FModuleManager::LoadModuleChecked<IPuertsAutoMixinModule>("PuertsAutoMixin");
+	Module.RegisterBindDelegate(JsEnv, BindCallback);
 }
 
 void UTemplateGameInstance::StartJavaScriptEnv()
